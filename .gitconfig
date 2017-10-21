@@ -1,0 +1,7 @@
+[core]
+	autocrlf = input 
+[user]
+	name = Deng
+	email = d.vay@qq.com
+[help]
+	autocorrect = 1
