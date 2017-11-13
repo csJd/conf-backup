@@ -1,7 +1,10 @@
 [core]
 	autocrlf = input 
+	editor = vim
 [user]
 	name = Deng
 	email = d.vay@qq.com
 [help]
 	autocorrect = 1
+[push]
+	default = simple
