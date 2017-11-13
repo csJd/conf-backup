@@ -1,9 +1,3 @@
-#
-# This is the config file, and
-# a '#' or ';' character indicates
-# a comment
-#
-
 [core]
 	autocrlf = input 
 [user]
@@ -11,7 +5,3 @@
 	email = d.vay@qq.com
 [help]
 	autocorrect = 1
-[push]
-	default = simple
-    ; default = matching
-    ; more info at '$ git help config' and search 'push.default'
