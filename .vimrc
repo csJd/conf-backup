@@ -14,7 +14,7 @@ set autoindent
 set cindent
 
 
-"colo torte
+"colo monokai 
 
 
 """key-map setting
