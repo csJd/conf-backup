@@ -1,6 +1,7 @@
 [core]
-	autocrlf = input 
-	editor = vim
+	autocrlf = input
+    safecrlf = true 
+#    editor = vim
 [user]
 	name = Deng
 	email = d.vay@qq.com
