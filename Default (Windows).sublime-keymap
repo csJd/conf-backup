@@ -1,0 +1,27 @@
+[
+    {
+        "keys" : ["alt+m"],
+        "command" : "markdown_preview",
+        "args" :
+        {
+            "target" : "browser"
+        }
+    },
+    {
+        "keys": ["j", "j"],
+        "command": "exit_insert_mode",
+        "context":
+        [
+            { "key": "setting.command_mode", "operand": false },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },
+    {
+        "keys": ["ctrl+alt+l"],
+        "command": "coolformat",
+        "args":
+        {
+            "action": "quickFormat"
+        }
+    },
+]

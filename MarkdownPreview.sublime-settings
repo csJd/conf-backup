@@ -1,0 +1,12 @@
+{
+    /*
+    "parser": "github",
+    */
+    /*
+        Enable or not mathjax support.
+    */
+    "enable_mathjax": true,
+
+    "show_panel_on_build": false
+
+}
