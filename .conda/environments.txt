@@ -1,1 +1,0 @@
-d:\dsr\miniconda3\envs\py2
