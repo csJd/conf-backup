@@ -13,6 +13,10 @@ set smarttab
 set autoindent
 set cindent
 
+"encoding related
+set enc=utf-8  " display as encoding
+set fencs=utf-8,ucs-bom,gbk,gb2312,gb18030,big5,euc-jp,euc-kr,latin1  " try encoding list
+set fenc=utf-8  " set file encoding
 
 "colo monokai 
 
