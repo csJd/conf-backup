@@ -27,3 +27,8 @@ alias rcp='rsync -rhpog --progress'
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 
+# set DIR color if ~/.dircolor exists
+if [ -f "$HOME/.dircolors" ]; then
+    eval "$(dircolors $HOME/.dircolors)"
+fi
+
