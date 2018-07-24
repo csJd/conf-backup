@@ -26,3 +26,5 @@ imap jj <ESC>
 imap <A-/> <C-n>
 imap {{ {<ESC>o}<ESC>O
 imap <c-]> {<cr>}<c-o>O<left><right>
+vmap m <ESC>
+
