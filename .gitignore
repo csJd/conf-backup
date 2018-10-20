@@ -1,5 +1,5 @@
 # Ignore everything
-*
+#*
 
 ## But descend into directories
 #!*/
@@ -8,4 +8,5 @@
 ## You can be specific with these rules
 #!/some/other/deep/path/**
 
-!.gitignore
+#!.gitignore
+
