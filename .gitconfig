@@ -1,6 +1,7 @@
 [core]
 	autocrlf = input 
 	editor = vim
+	excludesfile = ~/.gitignore
 [user]
 	name = Deng
 	email = d.vay@qq.com
