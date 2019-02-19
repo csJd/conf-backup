@@ -1,0 +1,57 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.pythonPath": "/opt/miniconda3/envs/ml/bin/python",
+    "window.zoomLevel": 0,
+
+    // ------------- start of vim settings ---------------
+    "vim.insertModeKeyBindings": [
+        {
+          "before": ["j", "j"],
+          "after": ["<Esc>"]
+        },
+        {
+            "before": ["Z", "Z"],
+            "commands": [
+                ":wq"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["q"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.useSystemClipboard": true,
+    // Bind : to show the command palette:
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [":"],
+            "commands": [
+                "workbench.action.showCommands",
+            ]
+        }
+    ],
+    // Bind > and < in visual mode to indent/outdent lines (repeatable)
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    // --------------- end of vim settings ---------------
+    
+    "git.autofetch": true,
+}
