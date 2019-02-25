@@ -1,7 +1,18 @@
 {
-    "python.linting.pylintEnabled": true,
-    "python.pythonPath": "/opt/miniconda3/envs/ml/bin/python",
-    "window.zoomLevel": 0,
+    "editor.wordWrap": "on",
+    "editor.cursorBlinking": "smooth",
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+
+    "[python]":{
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+    },
+
+    "[c]":{
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+    },
 
     // ------------- start of vim settings ---------------
     "vim.insertModeKeyBindings": [
@@ -53,5 +64,4 @@
     ],
     // --------------- end of vim settings ---------------
     
-    "git.autofetch": true,
 }
