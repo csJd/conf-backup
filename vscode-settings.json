@@ -1,5 +1,4 @@
 {
-    "editor.wordWrap": "on",
     "editor.cursorBlinking": "smooth",
     "files.encoding": "utf8",
     "files.eol": "\n",
@@ -33,7 +32,7 @@
             "after": ["<Esc>"]
         }
     ],
-    "vim.useSystemClipboard": true,
+    "vim.useSystemClipboard": false,
     // Bind : to show the command palette:
     "vim.normalModeKeyBindingsNonRecursive": [
         {
@@ -62,6 +61,20 @@
             ]
         },
     ],
-    // --------------- end of vim settings ---------------
-    
+    "code-runner.runInTerminal": true,
+    "window.zoomLevel": 1,
+    // "rewrap.wrappingColumn": 80,
+    "latex-workshop.view.pdf.viewer": "browser",
+    "cSpell.enabled": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+
+    "editor.rulers": [100, 120],
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 100,
+    "editor.wrappingIndent": "same",
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#00000033"
+    }
 }

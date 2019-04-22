@@ -9,3 +9,10 @@
 	autocorrect = 1
 [push]
 	default = simple
+
+#[filter "lfs"]
+#	smudge = git-lfs smudge --skip
+#	smudge = git-lfs smudge --%f
+#	clean = git-lfs clean -- %f
+#	process = git-lfs filter-process
+#	required = true
