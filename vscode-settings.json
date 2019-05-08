@@ -9,6 +9,8 @@
     "editor.smoothScrolling": true,
     "editor.cursorBlinking": "smooth",
     "editor.formatOnPaste": false,
+    "editor.renderWhitespace": "none",
+    "editor.fontFamily": "Menlo, 'LiHei Pro', monospace",
 
     // files
     "files.encoding": "utf8",
@@ -16,13 +18,10 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
 
-    // misc
-    // enable url on top of editor
-    "breadcrumbs.enabled": true,
+    // miscellaneous
+    "breadcrumbs.enabled": true,  // enable url on top of editor
     "explorer.openEditors.visible": 0,
     "window.zoomLevel": 1,
-    // "rewrap.wrappingColumn": 80,
-
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#00000033"
     },
@@ -36,7 +35,7 @@
         "editor.formatOnSave": true,
     },
 
-    // ------------- start of vim settings ---------------
+    // vim settings
     "vim.insertModeKeyBindings": [
         {
           "before": ["j", "j"],
@@ -85,7 +84,9 @@
         },
     ],
 
+    // extension settings
     "code-runner.runInTerminal": true,
     "latex-workshop.view.pdf.viewer": "browser",
     "cSpell.enabled": false,
+    // "rewrap.wrappingColumn": 80,
 }
