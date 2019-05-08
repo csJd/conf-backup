@@ -1,13 +1,39 @@
 {
+    // editor
+    "editor.suggestSelection": "first",
+    "editor.rulers": [100, 120],
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 100,
+    "editor.wrappingIndent": "same",
+    "editor.minimap.renderCharacters": false,
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.formatOnPaste": false,
 
+    // files
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+
+    // misc
+    // enable url on top of editor
+    "breadcrumbs.enabled": true,
+    "explorer.openEditors.visible": 0,
+    "window.zoomLevel": 1,
+    // "rewrap.wrappingColumn": 80,
+
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#00000033"
+    },
+
+    // language specific
     "[python]":{
         "editor.formatOnSave": true,
-        "editor.formatOnPaste": true,
     },
 
     "[c]":{
         "editor.formatOnSave": true,
-        "editor.formatOnPaste": true,
     },
 
     // ------------- start of vim settings ---------------
@@ -58,33 +84,8 @@
             ]
         },
     ],
+
     "code-runner.runInTerminal": true,
-    "window.zoomLevel": 1,
-    // "rewrap.wrappingColumn": 80,
     "latex-workshop.view.pdf.viewer": "browser",
     "cSpell.enabled": false,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.jediEnabled": false,
-
-    "editor.suggestSelection": "first",
-    "editor.rulers": [100, 120],
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 100,
-    "editor.wrappingIndent": "same",
-    "editor.minimap.renderCharacters": false,
-    "editor.smoothScrolling": true,
-    "editor.cursorBlinking": "smooth",
-
-    "files.encoding": "utf8",
-    "files.eol": "\n",
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-
-    // enable url on top of editor
-    "breadcrumbs.enabled": true,
-    "explorer.openEditors.visible": 0,
-
-    "workbench.colorCustomizations": {
-        "editorRuler.foreground": "#00000033"
-    }
 }
