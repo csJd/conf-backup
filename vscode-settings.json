@@ -1,5 +1,6 @@
 {
     // editor
+    "editor.tabSize": 4,
     "editor.suggestSelection": "first",
     "editor.rulers": [100, 120],
     "editor.wordWrap": "bounded",
@@ -30,6 +31,7 @@
     "[python]":{
         "editor.formatOnSave": true,
     },
+    "python.jediEnabled": false,
 
     "[c]":{
         "editor.formatOnSave": true,
