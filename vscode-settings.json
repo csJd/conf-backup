@@ -12,6 +12,7 @@
     "editor.formatOnPaste": false,
     "editor.renderWhitespace": "none",
     "editor.fontFamily": "Menlo, 'LiHei Pro', monospace",
+    // "editor.fontFamily": "Consolas, 'Microsoft YaHei'",  // for Windows
 
     // files
     "files.encoding": "utf8",
@@ -57,7 +58,7 @@
         }
     ],
     "vim.useSystemClipboard": false,
-    // Bind : to show the command palette:
+    // bind : to show the command palette:
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [":"],
@@ -66,7 +67,7 @@
             ]
         }
     ],
-    // Bind > and < in visual mode to indent/outdent lines (repeatable)
+    // bind > and < in visual mode to indent/outdent lines (repeatable)
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": [
@@ -90,5 +91,28 @@
     "code-runner.runInTerminal": true,
     "latex-workshop.view.pdf.viewer": "browser",
     "cSpell.enabled": false,
+    "autoDocstring.docstringFormat": "google"
     // "rewrap.wrappingColumn": 80,
 }
+
+/*
+UNIX: `code --list-extensions | xargs -L 1 echo code --install-extension`
+Windows: `code --list-extensions | % { "code --install-extension $_" }`
+*/
+
+/* install extensions
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension eamodio.gitlens
+code --install-extension formulahendry.code-runner
+code --install-extension IBM.output-colorizer
+code --install-extension James-Yu.latex-workshop
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
+code --install-extension njpwerner.autodocstring
+code --install-extension shengchen.vscode-leetcode
+code --install-extension stkb.rewrap
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension vscodevim.vim
+code --install-extension yzhang.markdown-all-in-one
+*/
