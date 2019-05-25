@@ -37,6 +37,11 @@
     "[c]":{
         "editor.formatOnSave": true,
     },
+    
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.wordWrapColumn": 80,
+    },
 
     // vim settings
     "vim.insertModeKeyBindings": [
@@ -91,8 +96,13 @@
     "code-runner.runInTerminal": true,
     "latex-workshop.view.pdf.viewer": "browser",
     "cSpell.enabled": false,
-    "autoDocstring.docstringFormat": "google"
-    // "rewrap.wrappingColumn": 80,
+    "autoDocstring.docstringFormat": "google",
+    "rewrap.wrappingColumn": 80,
+    "leetcode.enableSideMode": false,
+    "leetcode.defaultLanguage": "python3",
+    "leetcode.showCommentDescription": true,
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.hint.commentDescription": false,
 }
 
 /*
