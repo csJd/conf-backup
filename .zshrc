@@ -63,7 +63,7 @@ ZSH_THEME="kolod"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z git sudo)
+plugins=(z git sudo vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,4 +97,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [[ -e ~/.profile ]] && source ~/.profile
+bindkey jj vi-cmd-mode
 

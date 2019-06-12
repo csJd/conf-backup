@@ -11,8 +11,10 @@
     "editor.cursorBlinking": "smooth",
     "editor.formatOnPaste": false,
     "editor.renderWhitespace": "none",
-    "editor.fontFamily": "Menlo, 'LiHei Pro', monospace",
-    // "editor.fontFamily": "Consolas, 'Microsoft YaHei'",  // for Windows
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,  // for ligature font like Fira Code
+    "editor.fontFamily": "FiraCode-Retina, 'LiHei Pro', Menlo",
+    // "editor.fontFamily": "'Fira Code', 'Microsoft YaHei', Consolas",  // for Windows
 
     // files
     "files.encoding": "utf8",
@@ -21,9 +23,10 @@
     "files.trimTrailingWhitespace": true,
 
     // miscellaneous
+    "terminal.integrated.fontSize": 13,
     "breadcrumbs.enabled": true,  // enable url on top of editor
     "explorer.openEditors.visible": 0,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#00000033"
     },
@@ -37,13 +40,14 @@
     "[c]":{
         "editor.formatOnSave": true,
     },
-    
+
     "[markdown]": {
         "editor.wordWrap": "on",
         "editor.wordWrapColumn": 80,
     },
 
     // vim settings
+    // "vim.useCtrlKeys": false, // Windows
     "vim.insertModeKeyBindings": [
         {
           "before": ["j", "j"],
@@ -91,12 +95,23 @@
             ]
         },
     ],
+    // "vim.normalModeKeyBindings": [
+    //     {
+    //         "before": ["j"],
+    //         "after": ["g", "j"]
+    //     },
+    //     {
+    //         "before": ["k"],
+    //         "after": ["g", "k"]
+    //     },
+    // ]
 
     // extension settings
     "code-runner.runInTerminal": true,
     "latex-workshop.view.pdf.viewer": "browser",
     "cSpell.enabled": false,
     "autoDocstring.docstringFormat": "google",
+    "bracketPairColorizer.excludedLanguages": ["json"],
     "rewrap.wrappingColumn": 80,
     "leetcode.enableSideMode": false,
     "leetcode.defaultLanguage": "python3",
