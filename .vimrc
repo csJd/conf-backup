@@ -1,6 +1,7 @@
 """var setting
 
 "set nu
+set ruler
 set nocompatible
 set nobackup
 set noswapfile

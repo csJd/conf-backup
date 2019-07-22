@@ -1,8 +1,11 @@
+#  tuna mirror is working again now
 channels:
-#  tuna mirror is off now
-#  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-#  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-#  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
   - defaults
 show_channel_urls: true
 
+# do not auto activate
+auto_activate_base: false

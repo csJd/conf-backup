@@ -11,9 +11,9 @@
     "editor.cursorBlinking": "smooth",
     "editor.formatOnPaste": false,
     "editor.renderWhitespace": "none",
-    "editor.fontSize": 13,
+    "editor.fontSize": 14,
     "editor.fontLigatures": true,  // for ligature font like Fira Code
-    "editor.fontFamily": "FiraCode-Retina, 'LiHei Pro', Menlo",
+    "editor.fontFamily": "FiraCode-Retina, 'Heiti SC', Menlo",
     // "editor.fontFamily": "'Fira Code', 'Microsoft YaHei', Consolas",  // for Windows
 
     // files
@@ -23,7 +23,7 @@
     "files.trimTrailingWhitespace": true,
 
     // miscellaneous
-    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontSize": 14,
     "breadcrumbs.enabled": true,  // enable url on top of editor
     "explorer.openEditors.visible": 0,
     "window.zoomLevel": 0,
@@ -35,6 +35,11 @@
     "[python]":{
         "editor.formatOnSave": true,
     },
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--max-line-length", "100",
+    ],
+    "python.linting.lintOnSave": true,
     "python.jediEnabled": false,
 
     "[c]":{

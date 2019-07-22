@@ -17,5 +17,3 @@ alias l='ls -CF'
 alias gcc='gcc-7'
 alias g++='g++-7'
 
-. /opt/miniconda3/etc/profile.d/conda.sh
-
