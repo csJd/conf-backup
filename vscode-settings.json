@@ -2,7 +2,10 @@
     // editor
     "editor.tabSize": 4,
     "editor.suggestSelection": "first",
-    "editor.rulers": [100, 120],
+    "editor.rulers": [
+        100,
+        120
+    ],
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 100,
     "editor.wrappingIndent": "same",
@@ -10,9 +13,10 @@
     "editor.smoothScrolling": true,
     "editor.cursorBlinking": "smooth",
     "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
     "editor.renderWhitespace": "none",
     "editor.fontSize": 14,
-    "editor.fontLigatures": true,  // for ligature font like Fira Code
+    "editor.fontLigatures": true, // for ligature fonts like Fira Code
     "editor.fontFamily": "FiraCode-Retina, 'Heiti SC', Menlo",
     // "editor.fontFamily": "'Fira Code', 'Microsoft YaHei', Consolas",  // for Windows
 
@@ -24,7 +28,7 @@
 
     // miscellaneous
     "terminal.integrated.fontSize": 14,
-    "breadcrumbs.enabled": true,  // enable url on top of editor
+    "breadcrumbs.enabled": true, // enable url on top of editor
     "explorer.openEditors.visible": 0,
     "window.zoomLevel": 0,
     "workbench.colorCustomizations": {
@@ -32,20 +36,26 @@
     },
 
     // language specific
-    "[python]":{
+    "[c]": {
+        "editor.formatOnSave": true,
+    },
+    "[cpp]": {
+        "editor.formatOnSave": true,
+    },
+    "[python]": {
         "editor.formatOnSave": true,
     },
     "python.formatting.provider": "autopep8",
+    // "python.formatting.provider": "black",
     "python.formatting.autopep8Args": [
-        "--max-line-length", "100",
+        "--max-line-length",
+        "79",
     ],
+    "python.terminal.activateEnvironment": false,
+    "python.linting.flake8Enabled": false,
+    "python.linting.pylintEnabled": false,
     "python.linting.lintOnSave": true,
     "python.jediEnabled": false,
-
-    "[c]":{
-        "editor.formatOnSave": true,
-    },
-
     "[markdown]": {
         "editor.wordWrap": "on",
         "editor.wordWrapColumn": 80,
@@ -55,11 +65,19 @@
     // "vim.useCtrlKeys": false, // Windows
     "vim.insertModeKeyBindings": [
         {
-          "before": ["j", "j"],
-          "after": ["<Esc>"]
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         },
         {
-            "before": ["Z", "Z"],
+            "before": [
+                "Z",
+                "Z"
+            ],
             "commands": [
                 ":wq"
             ]
@@ -67,15 +85,21 @@
     ],
     "vim.visualModeKeyBindings": [
         {
-            "before": ["q"],
-            "after": ["<Esc>"]
+            "before": [
+                "q"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
     ],
     "vim.useSystemClipboard": false,
     // bind : to show the command palette:
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": [":"],
+            "before": [
+                ":"
+            ],
             "commands": [
                 "workbench.action.showCommands",
             ]
@@ -113,23 +137,30 @@
 
     // extension settings
     "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ $fileName && ./a.out",
+    },
     "latex-workshop.view.pdf.viewer": "browser",
     "cSpell.enabled": false,
     "autoDocstring.docstringFormat": "google",
-    "bracketPairColorizer.excludedLanguages": ["json"],
+    "bracketPairColorizer.excludedLanguages": [
+        "json"
+    ],
+    "markdownlint.run": "onSave",
     "rewrap.wrappingColumn": 80,
     "leetcode.enableSideMode": false,
     "leetcode.defaultLanguage": "python3",
     "leetcode.showCommentDescription": true,
     "leetcode.hint.configWebviewMarkdown": false,
     "leetcode.hint.commentDescription": false,
+    "leetcode.workspaceFolder": "/Users/deng/src/oj-codes/leetcode",
+    "leetcode.hint.commandShortcut": false,
 }
 
 /*
 UNIX: `code --list-extensions | xargs -L 1 echo code --install-extension`
 Windows: `code --list-extensions | % { "code --install-extension $_" }`
 */
-
 /* install extensions
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension eamodio.gitlens

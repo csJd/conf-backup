@@ -13,7 +13,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# use brew gcc-7 instead of clang gcc
-alias gcc='gcc-7'
-alias g++='g++-7'
+# use brew gcc-9 instead of clang
+alias gcc='gcc-9'
+alias g++='g++-9'
 
