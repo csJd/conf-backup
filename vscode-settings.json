@@ -42,6 +42,7 @@
     "[cpp]": {
         "editor.formatOnSave": true,
     },
+    "C_Cpp.enhancedColorization": "Enabled",
     "[python]": {
         "editor.formatOnSave": true,
     },
@@ -55,14 +56,17 @@
     "python.linting.flake8Enabled": false,
     "python.linting.pylintEnabled": false,
     "python.linting.lintOnSave": true,
-    "python.jediEnabled": false,
+    "python.jediEnabled": true,
     "[markdown]": {
         "editor.wordWrap": "on",
         "editor.wordWrapColumn": 80,
+        "files.trimTrailingWhitespace": false,
     },
 
     // vim settings
     // "vim.useCtrlKeys": false, // Windows
+    "vim.vimrc.enable": false,
+    "vim.vimrc.path": "~/vscode.vimrc",
     "vim.insertModeKeyBindings": [
         {
             "before": [
@@ -137,6 +141,7 @@
 
     // extension settings
     "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
     "code-runner.executorMap": {
         "cpp": "cd $dir && g++ $fileName && ./a.out",
     },

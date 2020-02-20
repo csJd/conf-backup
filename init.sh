@@ -4,7 +4,7 @@ ln -s "$dir_url/.profile" ~/.profile
 ln -s "$dir_url/.gitconfig" ~/.gitconfig
 ln -s "$dir_url/.gitignore" ~/.gitignore
 ln -s "$dir_url/.ideavimrc" ~/.ideavimrc
-ln -s "$dir_url/.oh-my-zsh/custom/themes/kolod.zsh-theme" ~/.oh-my-zsh/custom/themes/
+ln -s "$dir_url/.zsh-custom" ~/
 ln -s "$dir_url/.pip" ~/
 ln -s "$dir_url/.tmux.conf" ~/.tmux.conf
 ln -s "$dir_url/.zshrc" ~/.zshrc
