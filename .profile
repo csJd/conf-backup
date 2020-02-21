@@ -16,16 +16,22 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
 alias rcp='rsync -rhpog --progress'
-
-# set PATH so it includes user's private bin directories
-PATH="$HOME/bin:$HOME/.local/bin:$PATH"
-
 
 # set DIR color if ~/.dircolor exists
 # if [ -f "$HOME/.dircolors" ]; then
