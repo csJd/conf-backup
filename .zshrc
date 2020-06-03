@@ -100,7 +100,10 @@ source $ZSH/oh-my-zsh.sh
 # print newline before prompt
 precmd() { print "" }
 
-[[ -e ~/.profile ]] && source ~/.profile
+if [ -e ~/.profile ]; then
+    source ~/.profile
+fi
+
 bindkey jj vi-cmd-mode
 
 # for iterm2 shell integration
