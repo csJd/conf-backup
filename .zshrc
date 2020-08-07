@@ -53,7 +53,7 @@ ZSH_CUSTOM="~/.zsh-custom"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo command-not-found cp)
+plugins=(git sudo command-not-found cp z)
 
 source $ZSH/oh-my-zsh.sh
 

@@ -11,7 +11,6 @@ ln -s "$dir_url/.zsh-custom" ~/
 
 ln -s "$dir_url/.vim" ~/
 ln -s "$dir_url/.vimrc" ~/
-ln -s "$dir_url/.ideavimrc" ~/
 
 ln -s "$dir_url/.pip" ~/
 ln -s "$dir_url/.condarc" ~/
