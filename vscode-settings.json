@@ -28,6 +28,7 @@
 
     // miscellaneous
     "terminal.integrated.fontSize": 14,
+    "terminal.integrated.inheritEnv": false,
     "breadcrumbs.enabled": true, // enable url on top of editor
     "explorer.openEditors.visible": 0,
     "window.zoomLevel": 0,
@@ -46,16 +47,28 @@
     "[python]": {
         "editor.formatOnSave": true,
     },
-    "python.formatting.provider": "autopep8",
-    // "python.formatting.provider": "black",
+    // "python.formatting.provider": "autopep8",
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "88"
+    ],
     "python.formatting.autopep8Args": [
         "--max-line-length",
-        "79",
+        "80",
     ],
     "python.terminal.activateEnvironment": false,
-    "python.linting.flake8Enabled": false,
     "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length",
+        "120",
+        "--ignore",
+        "W503,E203"
+    ],
+    // E402: module level import not at top of file
     "python.linting.lintOnSave": true,
+    "python.languageServer": "Jedi",
     "python.jediEnabled": true,
     "[markdown]": {
         "editor.wordWrap": "on",
