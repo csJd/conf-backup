@@ -24,3 +24,6 @@ alias l='ls -CF'
 # use brew gcc-6 instead of clang
 alias gcc='gcc-6'
 alias g++='g++-6'
+
+alias py36='conda activate py36'
+alias base='conda activate base'
